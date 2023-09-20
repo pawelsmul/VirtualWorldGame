@@ -1,0 +1,37 @@
+:root {
+    --tile-size: 40px;
+}
+
+#board-wrapper {
+    width: 90vw;
+    height: 90vh;
+    margin: auto;
+    position: absolute;
+    /*top: 0; bottom: 0; left: 0; right: 0;*/
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(20, var(--tile-size)); /* 20 columns, 30px each */
+    grid-template-rows: repeat(20, var(--tile-size)); /* 20 rows, 30px each */
+    gap: 1px; /* Gap between cells */
+    justify-content: center;
+}
+
+.tile {
+    width: var(--tile-size);
+    height: var(--tile-size);
+    border: 1px solid black;
+}
+
+.player {
+    width: 30px;
+    height: 30px;
+    background-color: red;
+}
+
+.grass {
+    width: 30px;
+    height: 30px;
+    background-color: green;
+}
